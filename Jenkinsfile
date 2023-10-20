@@ -1,12 +1,12 @@
 pipeline {
     agent any
     tools {
-        maven 'maven1'
+        maven 'M2'
     }
     stages {
         stage('fetch') {
             steps {
-                echo 'Fetching the Maven Project from github'
+                echo 'Fetching the Maven Project from GitHub'
                 git branch: 'main',
                 url: 'https://github.com/Gauravkumar1502/DevOpsPractical'
             }
