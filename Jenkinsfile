@@ -47,11 +47,6 @@ pipeline {
                 bat 'mvn verify'
             }
         }
-        stage('install') {
-            steps {
-                echo 'Installing the Maven Project'
-                bat 'mvn install'
-            }
         }
     }
 }
