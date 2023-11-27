@@ -14,13 +14,13 @@ pipeline {
         stage('validate') {
             steps {
                 echo 'Validating the Maven Project'
-                sh 'mvn validate'
+                bat 'mvn validate'
             }
         }
         stage('clean') {
             steps {
                 echo 'Cleaning the Maven Project'
-                sh 'mvn clean'
+                bat 'mvn clean'
             }
         }
         stage('compile') {
